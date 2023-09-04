@@ -1,8 +1,8 @@
 ﻿@model FutureValueModel
 @{
-    Layout = null;
+    ViewBag.Title = "Future Value Calculater";
+    //Zoey Nova
 }
-//Zoey Nova
 
 <!DOCTYPE html>
 <html>
@@ -34,6 +34,7 @@
     <body>
         <h1>Future Value Calculator</h1>
         <form asp-action="Index" method="post">
+            <div asp-validation-summary="All"></div>
             <div>
                 <label asp-for="MonthlyInvestment">Monthly Investment:</label>
                 <input asp-for="MonthlyInvestment" />
